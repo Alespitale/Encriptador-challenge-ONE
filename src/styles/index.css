@@ -217,6 +217,11 @@ button:hover {
     display: none;
   }
 
+  .img-frame {
+    width: 250px;
+    height: 100px;
+  }
+
   .text-container {
     width: 100%;
     align-items: center;
