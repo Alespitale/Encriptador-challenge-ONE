@@ -28,16 +28,19 @@ button:hover {
 
 .lnr-moon,
 .lnr-sun {
+  display:flex;
   position: absolute;
   color: black;
   font-size: 30px;
   max-width: 40px;
   right: 0;
+  top:0;
   margin: 1rem;
   cursor: pointer;
 }
 .lnr-sun {
   color:white;
+  display:none
 }
 
 .dark-mode {
@@ -62,7 +65,10 @@ button:hover {
   line-height: 150%;
   color: #6e0a71;
   background-color: var(--lightMode);
+  box-shadow: 0px 0px 20px -8px rgba(203, 205, 210);
   transition: 1s;
+  padding:10px;
+  border-radius: 24px;
 }
 
 .form-control::placeholder {
@@ -71,9 +77,20 @@ button:hover {
 
 .form-control:focus{
   border-color: #6e0a71;
-  box-shadow: 0 0 0 0.25rem rgba(85, 10, 113, 0.25);
+  box-shadow: 0px 0px 20px -8px rgba(203, 205, 210);
   background-color: var(--lightMode);
   color:#6e0a71;
+}
+
+.right-form{
+  display:none;
+  border:none;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px -8px rgba(203, 205, 210);
+  background: var(--lightMode);
+  border-radius: 32px;
+  padding:10px;
 }
 
 .legend {
@@ -99,14 +116,15 @@ button:hover {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 900px;
+  height: 820px;
   left: 1000px;
   top: 40px;
   background: var(--lightMode);
-  transition: 1s;
   box-shadow: 0px 0px 20px -8px rgba(203, 205, 210);
   border-radius: 32px;
+  transition: 1s;
   gap: 34px;
+  margin-bottom: 10px;
 }
 
 .container-all {
@@ -140,7 +158,8 @@ button:hover {
 }
 
 .btn-encript,
-.btn-decript {
+.btn-decript,
+.btn-copy {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,13 +176,21 @@ button:hover {
   color: white
 }
 
-.btn-decript {
+.btn-decript,
+.btn-copy {
   background: var(--lightMode);
   transition: 1s;
   color: #6e0a71
 }
 
-@media (max-width: 1439px) {
+.btn-copy {
+  display:none;
+  margin-bottom: 17px;
+  width: 90%;
+  max-width: 332px;
+}
+
+@media (max-width: 1365px) {
   .btn-direction {
     flex-direction: column;
   }
@@ -179,10 +206,10 @@ button:hover {
   }
 
   .img-cont {
-    width: 688px;
-    height: 186px;
-    left: 24px;
-    top: 707px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
     margin-top: 40px;
   }
 
