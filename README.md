@@ -2,7 +2,7 @@
 Hecho para el curso de Oracle Next Education 2022.
 
 ## Link al encriptador
-[Encriptador](Encrip)
+[Encriptador](https://encrypt-alespitale.vercel.app/)
 
 ## Descripción
 Vamos a trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
