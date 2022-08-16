@@ -108,6 +108,7 @@ button:hover {
 .img-frame {
   width: 336px;
   height: 122px;
+  padding: 15px:
 }
 
 .img-cont {
@@ -219,7 +220,7 @@ button:hover {
 
   .img-frame {
     width: 250px;
-    height: 100px;
+    height: 80px;
   }
 
   .text-container {
